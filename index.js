@@ -5,6 +5,7 @@ var http = require('http');
 var fs = require('fs');
 function main(request, response){
     var data;
+    console.log('Main function. Trying to response.')
     if (request.url==='/main.css')
         data = fs.readFile('./pages/main.css',function (error, data) {
             response.end(data)})
