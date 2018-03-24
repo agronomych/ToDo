@@ -19,6 +19,7 @@ function main(request, response){
 
 function startFunction(){
     console.log('Starting server...');
+    console.log('Started');
 }
 var server = http.createServer(main);
 server.listen(3000,'127.0.0.1',startFunction());
