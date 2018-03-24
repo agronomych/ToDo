@@ -2,8 +2,18 @@
  * Created by Agronom on 24.03.2018.
  */
 var http = require('http');
+var fs = require('fs');
 function main(request, response){
-    response.end('Hello!');
+    var data;
+    if (request.url==='/main.css')
+        data = fs.readFile('./pages/main.css',function (error, data) {
+            response.end(data)})
+    else if (request.url==='/')
+        data = fs.readFile('./pages/main.html',function (error, data) {
+            response.end(data)});
+    else if (request.url==='/favicon.ico')
+        data = fs.readFile('./favicon.ico',function (error, data) {
+            response.end(data)});
 }
 
 function startFunction(){
