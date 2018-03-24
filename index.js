@@ -25,4 +25,4 @@ var server = http.createServer(main);
 var port = process.env.PORT || 3000;
 console.log(port);
 console.log('Env.port='+process.env.PORT);
-server.listen(port,'localhost',startFunction());
+server.listen(port,startFunction());
