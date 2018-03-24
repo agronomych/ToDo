@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     height: 5vh;
-    width: 30vw;
+    width: 50vw;
     background-color: burlywood;
     justify-content: center;
     align-items: center;
@@ -27,19 +27,16 @@ header {
 #toDoItems{
     display: flex;
     flex-direction: column;
-    width:30vw;
+    width:50vw;
 }
 
-#toDoItems :nth-of-type(2n+1){
-    background-color: dimgray;
-}
-
-#toDoItems :nth-of-type(2n){
-    background-color:antiquewhite;
-}
-
-#toDoItem{
-    width: 30vw;
+.toDoItem{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
     height: 4vh;
-    background-color: rgba(0,0,0,0);
+    border-radius: 1vh;
+    background-color:antiquewhite;
+    margin: 2px 0;
+    padding: 1vh;
 }

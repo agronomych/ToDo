@@ -14,15 +14,14 @@ function makeToDoItem() {
     elements[2].setAttribute('value','изменить');
     elements[3].setAttribute('type','button');
     elements[3].setAttribute('value','удалить');
-    for (var i=0;i<3;i++){
-        elements[i].setAttribute('background-color','rgba(0,0,0,0');
+    for (var i=0;i<4;i++){
         fragment.appendChild(elements[i]);
-        console.log('Add element');
     }
     return fragment;
 }
 
 function addToDoItem(){
+
     var newToDoItem = document.createElement('div');
     newToDoItem.className='toDoItem';
     newToDoItem.appendChild(makeToDoItem());
