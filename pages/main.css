@@ -23,3 +23,23 @@ header {
 #main_part{
     margin-top: 10px;
 }
+
+#toDoItems{
+    display: flex;
+    flex-direction: column;
+    width:30vw;
+}
+
+#toDoItems :nth-of-type(2n+1){
+    background-color: dimgray;
+}
+
+#toDoItems :nth-of-type(2n){
+    background-color:antiquewhite;
+}
+
+#toDoItem{
+    width: 30vw;
+    height: 4vh;
+    background-color: rgba(0,0,0,0);
+}
