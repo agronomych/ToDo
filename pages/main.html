@@ -2,7 +2,7 @@
 <html>
     
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="main.css">
     <meta charset="utf-8">
 </head>
     
@@ -11,10 +11,16 @@
         ToDo - планируй дела!
     </header>
     <div id="main_part">
-        <input>
+        <input id="inputField">
         <input id="addButton" type="button" value="Добавить">
     </div>
     <div id="toDoItems">
+        <div class="toDoItem">
+            <input type="checkbox" class="checkItem">
+            <label class="labels">Создать второе задание!</label>
+            <input id="saveButton" type="button" value="Сохранить">
+            <input id="deleteButton" type="button" value="Удалить">
+        </div>
     </div>
 </body>
 

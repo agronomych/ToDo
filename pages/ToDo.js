@@ -2,31 +2,13 @@
  * Created by Agronom on 24.03.2018.
  */
 
-function makeToDoItem() {
-    var fragment = document.createDocumentFragment();
+function makeToDoItem(tag, properties, ...childrens) {
+    var element;
 
-    var elements = [ document.createElement('input'),
-        document.createElement('input'),
-        document.createElement('input'),
-        document.createElement('input')];
-    elements[0].setAttribute('type','checkbox');
-    elements[2].setAttribute('type','button');
-    elements[2].setAttribute('value','изменить');
-    elements[3].setAttribute('type','button');
-    elements[3].setAttribute('value','удалить');
-    for (var i=0;i<4;i++){
-        fragment.appendChild(elements[i]);
-    }
-    return fragment;
 }
 
 function addToDoItem(){
 
-    var newToDoItem = document.createElement('div');
-    newToDoItem.className='toDoItem';
-    newToDoItem.appendChild(makeToDoItem());
-    var toDoItems = document.getElementById('toDoItems');
-    toDoItems.appendChild(newToDoItem);
 }
 
 function editToDoItem(){
@@ -34,13 +16,20 @@ function editToDoItem(){
 }
 
 function deleteToDoItem(){
+    console.log('Inside delete');
+    const toDoItem = this.parentElement;
+    toDoItems.parentElement.removeChild(toDoItem);
+}
 
+function completeToDoItem() {
+    const toDoItem = this.parentElement;
+    toDoItem.classList.toggle('completedItem');
 }
 
 window.onload = function(){
-
-    var addButton = document.getElementById('addButton');
-
-    addButton.addEventListener('click',addToDoItem);
-
+    const completeItem = document.querySelector('.checkItem');
+    const toDoItems = document.querySelector('toDoItems');
+    const toDoItem = document.querySelector('.toDoItem');
+    completeItem.addEventListener('click', completeToDoItem);
+    toDoItem.addEventListener('click', deleteToDoItem);
 }
