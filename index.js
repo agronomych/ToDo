@@ -6,13 +6,13 @@ var fs = require('fs');
 function main(request, response){
     var data;
     if (request.url==='/main.css')
-        data = fs.readFile('/pages/main.css',function (error, data) {
+        data = fs.readFile('./pages/main.css',function (error, data) {
             response.end(data)})
     else if (request.url==='/')
-        data = fs.readFile('/pages/main.html',function (error, data) {
+        data = fs.readFile('./pages/main.html',function (error, data) {
             response.end(data)});
     else if (request.url==='/favicon.ico')
-        data = fs.readFile('/favicon.ico',function (error, data) {
+        data = fs.readFile('./favicon.ico',function (error, data) {
             response.end(data)});
 }
 
