@@ -1,4 +1,4 @@
-html, body, div, input {
+html, body, div {
     padding: 0;
     margin: 0;
     outline: none;
@@ -27,15 +27,19 @@ header {
 
 input[type=button]{
     border-radius: 5px;
-    width: 80px;
+    flex-basis: 80px;
 }
 
-#deleteButton{
-    
+.deleteButton{
+    align-self: flex-start;
 }
 
-#saveButton{
-    
+.saveButton{
+    align-self: flex-start;
+}
+
+.changeButton {
+    align-self: flex-start;
 }
 
 #inputField{
@@ -53,19 +57,26 @@ input[type=button]{
     width:50vw;
 }
 
-.checkItem {
-    margin-right: 10px;
+.completeItem {
+    margin-right:auto 10px;
+    align-self: flex-start;
+}
+
+.completedItem label{
+    text-decoration: line-through;
 }
 
 .completedItem {
-    text-decoration: line-through;
+    color:dimgray;
 }
 
 .toDoItem{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 50vw;
-    height: 4vh;
+    width:50vw;
+    max-width: 40vw;
+    min-height: 4vh;
     border-radius: 1vh;
     background-color:antiquewhite;
     margin: 2px 0;
