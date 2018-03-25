@@ -2,8 +2,6 @@
  * Created by Agronom on 24.03.2018.
  */
 
-var fs = require('fs');
-
 function makeToDoItem(title) {
     var element = document.createElement('div');
     element.setAttribute('class','toDoItem');

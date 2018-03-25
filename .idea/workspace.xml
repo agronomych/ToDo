@@ -4,8 +4,6 @@
     <list default="true" id="f52ec032-b134-4964-a5ea-9f1018b8798b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ToDo.js" afterPath="$PROJECT_DIR$/pages/ToDo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.css" afterPath="$PROJECT_DIR$/pages/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.html" afterPath="$PROJECT_DIR$/pages/main.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,10 +30,10 @@
       <file leaf-file-name="ToDo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/ToDo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="84" lean-forward="true" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="84" />
+            <state relative-caret-position="255">
+              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding>
-                <element signature="e#0#44#0" expanded="false" />
+                <element signature="n#!!doc;n#makeToDoItem#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -238,12 +236,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521877368134</updated>
       <workItem from="1521877369801" duration="585000" />
-      <workItem from="1521966472742" duration="14539000" />
+      <workItem from="1521966472742" duration="14935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42653000" />
+    <option name="totallyTimeSpent" value="43049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -302,7 +300,7 @@
         <state relative-caret-position="544">
           <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
           <folding>
-            <element signature="e#0#44#0" expanded="false" />
+            <element signature="n#!!doc;n#makeToDoItem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -329,10 +327,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/ToDo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="84" lean-forward="true" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="84" />
+        <state relative-caret-position="255">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
-            <element signature="e#0#44#0" expanded="false" />
+            <element signature="n#!!doc;n#makeToDoItem#0" expanded="false" />
           </folding>
         </state>
       </provider>
