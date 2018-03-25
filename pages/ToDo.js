@@ -49,6 +49,14 @@ function bindListeners(){
         addButton.addEventListener('click', addToDoItem)})
 }
 window.onload = function(){
+    var req = new XMLHttpRequest();
+    req.open("GET", "toDoList.txt", true);
+    console.log(req.status);
+    req.addEventListener("load", function() {
+        console.log("Done:", req.status);
+        console.log(req.response);
+    });
+    req.send(null);
     const completeItem = document.querySelector('.completeItem');
     const toDoList = document.querySelector('#toDoList');
     const deleteButton = document.querySelector('.deleteButton');
